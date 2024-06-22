@@ -1,33 +1,44 @@
-# Projeto-Transacion-Backup-Recovery-MySqlBanks
+# Projeto Banco MySQl: Transações, Backup e Recuperação
 
-PARTE 1 – TRANSAÇÕES 
+## Introdução
 
-Objetivo:  
+Neste projeto, aprofundamos nosso conhecimento em transações, backup e recuperação de bancos de dados MySQL. Exploramos a criação e utilização de transações para garantir a integridade dos dados, implementamos procedures para automatizar tarefas e realizamos backups completos do banco de dados e-commerce.
 
-Neste desafio você irá lidar com transações para executar modificações na base de dados. Sendo assim, vamos relembrar como executar uma transação. Primeiramente, é preciso desabilitar o autocommit do MySQL. Caso contrário, cada instrução SQL executada será confirmada. 
+## Desvendando as Transações
 
-CODE 1
+### Dominando o Autocommit: 
+Desabilitamos o autocommit para controlar manualmente a confirmação das transações, garantindo que apenas operações bem-sucedidas sejam finalizadas.
+###  Transações com Statements SQL: 
 
-Essa primeira transação pode ser executada sem utilizar outros recursos como procedures. Dessa forma, você irá executar statements de consultas e modificações de dados persistidos no banco de dados via transações.  
+Executamos transações com instruções SQL para realizar modificações persistentes no banco de dados, gerenciando as ações com precisão.
+###  Procedures para Transações Complexas:
+Criamos procedures SQL para encapsular transações complexas, automatizando tarefas e aumentando a organização do código.
+###  Tratamento de Erros e Rollbacks:
+Implementamos verificações de erro dentro das procedures, utilizando rollbacks automáticos ou parciais (SAVEPOINT) para reverter operações em caso de falhas.
 
- 
+## Mergulhando no Backup e Recuperação
 
-CODE 2
+###  Protegendo o Banco de Dados: 
+Realizamos backups completos do banco de dados e-commerce utilizando o mysqldump, garantindo a preservação dos dados em caso de falhas ou necessidade de restauração.
+###  Restaurando a Tranquilidade: 
 
-PARTE 2 - TRANSAÇÃO COM PROCEDURE 
+Dominamos as técnicas de recuperação de bancos de dados, restaurando o banco de dados e-commerce a partir do backup gerado, garantindo a continuidade das operações.
+###  Explorando Além do E-commerce: 
 
-Você deverá criar outra transação, contudo, esta será definida dentro de uma procedure. Neste caso, assim como no exemplo em aula, deverá haver uma verificação de erro. Essa verificação irá acarretar um ROLLBACK, total ou parcial (SAVEPOINT). 
+Expandimos nossos conhecimentos para realizar backups de diferentes bancos de dados, incluindo procedures, eventos e outros recursos, garantindo a proteção completa do ambiente.
+###  Compartilhando o Conhecimento: 
 
-CODE 3
+Armazenamos o arquivo de backup e o script de recuperação no GitHub, facilitando o acesso e a replicação das soluções para outros bancos de dados.
+Conclusão
 
-PARTE 3 – BACKUP E RECOVERY 
+## Tecnologias Utilizadas
 
-Objetivo: 
+MySql
+## Aplicativo Utilizado
 
-Neste etapa do desafio, você irá executar o backup do banco de dados e-commerce. Realize o backup e recovery do banco de dados; 
+MySql WorkBanch
 
-Utilize o mysqdump para realizar o backup e recovery do banco de dados e-commerce; 
+## Conlcusão:
+ Ao concluir este projeto, aprimoramos significativamente nossas habilidades em transações, backup e recuperação de bancos de dados MySQL. Dominamos técnicas essenciais para garantir a integridade dos dados, a automação de tarefas e a segurança do ambiente de banco de dados, tornando-nos profissionais mais completos e preparados para os desafios do dia a dia.
 
-Realize o backup de diferentes bancos de dados e inseria os recursos como: procedures, eventos e outros. 
-
-Adicione o arquivo de backup ao github juntamente com o script; 
+Projeto desenvolvido por Cibele Gomes Domingos Moraes Lima
